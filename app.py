@@ -120,7 +120,7 @@ with tab1:
     f3.update_layout(template="plotly_dark", height=320, paper_bgcolor="rgba(0,0,0,0)")
     st.plotly_chart(f3, use_container_width=True)
     drop = float(predict(km_driven=[km])[0] - predict(km_driven=[km + 25000])[0])
-    st.info(f"Every extra 25,000 km lowers this car's value by about {inr(max(drop, 0))}.")
+    # st.info(f"Every extra 25,000 km lowers this car's value by about {inr(max(drop, 0))}.")
 
 with tab2:
     st.caption("Every point is a real listing: age, kilometres and price. K-Means groups them into "
